@@ -1,13 +1,66 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "left main right"
+    "footer footer footer";
+  grid-template-columns: 20% auto 20%;
+  grid-template-rows: 60px auto 60px;
+  height: 100vh;
 }
+
+header {
+  grid-area: header;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+main {
+  grid-area: main;
+  background-color: white;
+  padding: 15px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+  grid-area: right;
+  background-color: #f4f4f4;
+  padding: 15px;
+}
+
+/* Left Sidebar */
+.left-sidebar {
+  grid-area: left;
+  background-color: #f4f4f4;
+  padding: 15px;
+}
+
