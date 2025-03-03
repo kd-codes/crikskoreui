@@ -30,10 +30,32 @@ body {
 
 header {
   grid-area: header;
-  background-color: #333;
-  color: white;
+  background-color: #6E6E6E;
+  color: #BAFF39;
+  display: flex;
+  align-items: middle;
+  justify-content: space-between;
+  padding: 10px;
+  height: 50px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 20%;
+}
+
+.logo{
+  height: auto;
+  align-items: middle;
+  max-width: 250px;
+}
+
+.header-title{
+  flex: 1;
   text-align: center;
-  padding: 15px;
+  font-size: 30px;
 }
 
 main {
@@ -44,8 +66,8 @@ main {
 
 footer {
   grid-area: footer;
-  background-color: #333;
-  color: white;
+  background-color: #6E6E6E;
+  color: #BAFF39;
   text-align: center;
   padding: 15px;
 }
@@ -63,4 +85,3 @@ footer {
   background-color: #f4f4f4;
   padding: 15px;
 }
-

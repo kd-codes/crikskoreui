@@ -1,9 +1,12 @@
 import React from 'react'
+import logo from './logo.svg';
 
 const Header = () => {
   return (
     <header>
-        <h1>CrikSkore</h1>
+        <div className="logo-container">
+          <img src={logo} alt="CrikSkore Logo"  className="logo"/>
+        </div>
     </header>
   )
 }
